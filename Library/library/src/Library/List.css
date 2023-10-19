@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.welcome, .liste, .add{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: -2rem 0rem 3rem 0rem;
+    color: #402a23;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.liste{
+    margin: 2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.identity{
+    border: 1px solid gray;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    line-height: 2rem;    
+}
+.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #402a23;
+}
+.image{
+    width: 100%;
+}
+
+.modification button{
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #876464;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.modification button:hover {
+    background-color: white;
+    color:black;
+}
+.delete{
+    background-color: #da5151!important;
+    border: none;
+}
+
+form{
+    width: 60%;
+    border: 1px solid black;
+    margin: 0 0 2rem 15rem;
+    padding: 2rem;
+}
+
+label{
+    margin: 2rem;
+    font-weight: 600;
+}
+input[type=text]{
+    width: 90%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #f3f3f3cc;
+    color: #1d1716;
+}
+
+input[type=submit] {
+    width: 60%;
+    padding: 1rem;
+    margin: 0 0rem 0 10rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #59a985;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background-color: #3a7563;
+}
+
+.Home{
+    display: flex;
+    margin-left: 20rem;
+}
+
+.login, .users{
+    margin: 2rem;
+    text-align: center;
+}
+
+.login button,
+.users button {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 1rem;
+}
+
+.login button a,
+.users button a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+
+.popup {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+}
+
+.popup-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    margin: 1rem;
+}
+
+.close-btn {
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.popup-form{
+    margin: 0 !important;
+    border: none;
+}
+
+.popup-form input {
+    width: 100%;
+}
+.popup-form button {
+    width: 100% !important;
+    padding: 1rem;
+    margin: 10px !important;
+    border-radius: 5px;
+    border: none;
+}
+.delete{
+    background-color: red !important;
+    color: white;
+}
+.edit{
+    background-color: blue;
+    color: white;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.homepage{
+    width : auto;
+    height: 3rem;
+    cursor: pointer;
+    background-color: rgb(174, 228, 174);
+    border: none;
+    border-radius: 1rem;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+}
